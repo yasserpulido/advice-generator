@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Advice } from "./components/advice/Advice";
+import { Card } from "./components/UI/Card";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Card>
+        <Advice />
+      </Card>
+      <footer>
+        <div className="attribution">
+          Challenge by&nbsp;
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by&nbsp;
+          <a href="https://www.frontendmentor.io/profile/yasserpulido">
+            Yasser Pulido
+          </a>
+          .
+        </div>
+      </footer>
+    </React.Fragment>
   );
 }
 

@@ -1,0 +1,67 @@
+.card {
+  background-color: hsl(217, 19%, 24%);
+  padding: 2.5rem;
+  min-width: 250px;
+  max-width: 400px;
+  border-radius: 1rem;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+h6 {
+  color: hsl(150, 100%, 66%);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+
+p {
+  margin: 0;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.divider {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+button {
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 5px rgba(81, 255, 168, 0.75);
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(81, 255, 168, 0.75);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(81, 255, 168, 0.75);
+}
+
+.dice {
+  width: 1.2rem;
+}
+
+@media (max-width: 575.98px) {
+  .card {
+    padding: 1rem;
+  }
+}
