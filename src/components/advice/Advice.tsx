@@ -49,11 +49,19 @@ export const Advice = () => {
   if (isLoading) return <p>Searching...</p>;
   if (error) return <p>Advice not found!</p>;
 
+  console.log(
+    window.location.origin + "/docs/static/media/pattern-divider-desktop.svg"
+  );
+
   return (
     <React.Fragment>
       <h6>ADVICE #{advice.slip?.id}</h6>
       <p>"{advice.slip?.advice}"</p>
-      <img className="divider" src={divider} alt="divider desktop/mobile" />
+      <img
+        className="divider"
+        src={"./assets/images/pattern-divider-desktop.svg"}
+        alt="divider desktop/mobile"
+      />
       <button type="button" onClick={diceHandler}>
         <img src={Dice} alt="dice" className="dice" />
       </button>
