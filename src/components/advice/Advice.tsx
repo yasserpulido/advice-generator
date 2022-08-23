@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import DividerDesktop from "../../assets/images/pattern-divider-desktop.svg";
-import DividerMobile from "../../assets/images/pattern-divider-mobile.svg";
-import Dice from "../../assets/images/icon-dice.svg";
+import DividerDesktop from "./images/pattern-divider-desktop.svg";
+import DividerMobile from "./images/pattern-divider-mobile.svg";
+import Dice from "./images/icon-dice.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 export const Advice = () => {
@@ -49,17 +49,13 @@ export const Advice = () => {
   if (isLoading) return <p>Searching...</p>;
   if (error) return <p>Advice not found!</p>;
 
-  console.log(
-    window.location.origin + "/docs/static/media/pattern-divider-desktop.svg"
-  );
-
   return (
     <React.Fragment>
       <h6>ADVICE #{advice.slip?.id}</h6>
       <p>"{advice.slip?.advice}"</p>
       <img
         className="divider"
-        src={"./assets/images/pattern-divider-desktop.svg"}
+        src={divider}
         alt="divider desktop/mobile"
       />
       <button type="button" onClick={diceHandler}>
